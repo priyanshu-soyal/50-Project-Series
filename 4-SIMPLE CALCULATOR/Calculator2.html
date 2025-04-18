@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="Calculator2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <a href="../Dashboard.html">Home <i class="fa-solid fa-house"></i> </a>
+        <a href="https://www.linkedin.com/in/priyanshusoyal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank">Linkedln <i class="fa-brands fa-linkedin"></i></a>
+    </nav>
+    <div class="calculator">
+        <form>
+            <div class="display">
+                <input type="text" name="display"  placeholder="0" disabled/>
+            </div>
+            <div class="buttons">
+
+                <input type="button" value="AC" class="operation-button" onclick="display.value = '' ">
+                <input type="button" value="DEL" class="operation-button" onclick="display.value =  display.value.toString().slice(0, -1)">
+                <input type="button" value="/" class="operation-button" onclick="display.value += '/' ">
+                <input type="button" value="*" class="operation-button" onclick="display.value += '*' ">
+
+                <input type="button" value="7" onclick="display.value += '7' " >
+                <input type="button" value="8" onclick="display.value += '8' ">
+                <input type="button" value="9" onclick="display.value += '9' ">
+                <input type="button" value="-" class="operation-button" onclick="display.value += '-' ">
+
+                <input type="button" value="6" onclick="display.value += '6' ">
+                <input type="button" value="5" onclick="display.value += '5' ">
+                <input type="button" value="4" onclick="display.value += '4' ">
+                <input type="button" value="+" class="operation-button" onclick="display.value += '+' ">
+
+                <input type="button" value="1" onclick="display.value += '1' ">
+                <input type="button" value="2" onclick="display.value += '2' ">
+                <input type="button" value="3" onclick="display.value += '3' ">
+
+                <input type="button" value="=" class="operation-button" id="equal" onclick="display.value = eval(display.value)">
+                <input type="button" value="0" id="zero" onclick="display.value += '0' ">
+                <input type="button" value="." onclick="display.value += '.' ">
+
+            </div>
+            <div class="main">
+                <p class="brand">Developed by Priyanshu Soyal</a> 🔥</p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

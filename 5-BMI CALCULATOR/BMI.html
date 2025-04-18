@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI CALCULATOR APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        nav {
+            height: 90px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            border-bottom: 3px solid black;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: 600;
+            color: black;
+            background-color: white;
+            border: 2px solid black;
+            padding: 8px 20px;
+            border-radius: 10px;
+        }
+
+        nav a i {
+            font-size: 25px;
+        }
+        /* nav a:nth-child(1) {
+            background-color: rgb(223, 219, 219);
+        } */
+
+        .fa-linkedin {
+            /* background-color: gold; */
+            color: rgb(37, 37, 156);
+        }
+
+        .container {
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            /* height: 648px; */
+            height: 100%;
+        }
+
+        .container h1 {
+            font-size: 50px;
+            text-align: center;
+            margin: 10px 0 50px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        form p {
+            font-size: 30px;
+        }
+
+        form p input {
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            padding: 7px 20px;
+        }
+
+        form button {
+            font-size: 30px;
+            outline: none;
+            border: none;
+            /* width: fit-content; */
+            padding: 7px 0;
+            border-radius: 50px;
+            background-color: black;
+            color: white;
+            font-weight: 500;
+        }
+
+        #result {
+            margin: 5px 0;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .weightGuide {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .weightGuide h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .weightGuide ul {
+            position: absolute;
+            left: 50px;
+        }
+
+        .weightGuide li {
+            font-size: 25px;
+        }
+
+        @media (max-width: 520px) {
+            nav {
+                gap: 40px;
+            }
+
+            .container {
+                padding: 30px;
+            }
+
+            form p {
+                font-size: 25px;
+            }
+
+            .result {
+                font-size: 20px;
+            }
+
+            .weightGuide ul {
+                left: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="../Dashboard.html">Home <i class="fa-solid fa-house"></i> </a>
+        <a href="https://www.linkedin.com/in/priyanshusoyal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank">Linkedln <i class="fa-brands fa-linkedin"></i></a>
+    </nav>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <form>
+            <p>
+                <label for="height">Height in CM :- </label>
+                <input type="text" id="height" />
+            </p>
+
+            <p>
+                <label for="weight">Weight in KG :- </label>
+                <input type="text" id="weight" /> <br />
+            </p>
+
+            <button type="submit">Calculate</button>
+            <div id="result"></div>
+            <div class="weightGuide">
+                <h2>BMI Weight Guide</h2>
+                <ul>
+                    <li>Under Weight = less than 18.6</li>
+                    <li>Normal Weight = 18.6 to 24.9</li>
+                    <li>Over Weight = Greater than 24.9</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="BMI.js"></script>
+
+</html>

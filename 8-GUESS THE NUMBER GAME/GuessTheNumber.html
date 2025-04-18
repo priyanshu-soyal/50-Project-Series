@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="GuessTheNumber.css">
+</head>
+<body>
+    <nav>
+        <a href="../Dashboard.html">Home <i class="fa-solid fa-house"></i> </a>
+        <a href="https://www.linkedin.com/in/priyanshusoyal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank">Linkedln <i class="fa-brands fa-linkedin"></i></a>
+    </nav>
+    <h1>Number Guessing Game</h1>
+    <div class="wrapper">
+        <p>Try and guess a random number between 1 and 100.</p>
+        <p>You have 10 attemps to right a guess number</p>
+        <br>
+        <form>
+            <label for="guessField" id="guess">Guess a number</label>
+            <input type="text" id="guessField">
+            <input type="submit" id="submitBtn" value="Submit Guess">
+        </form>
+
+        <div class="resultparas">
+            <p>Previous Guesses :- <span class="guesses"></span></p>
+            <p>Guesses Remaining :- <span class="lastResult">10</span></p>
+            <p class="lowOrHigh"></p>
+        </div>
+    </div>
+
+
+    
+    <script src="GuessTheNumber.js"></script>
+</body>
+</html>

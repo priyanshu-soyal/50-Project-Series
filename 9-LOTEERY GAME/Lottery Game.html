@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lottery Game</title>
+    <link rel="stylesheet" href="Lottery Game.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav>
+      <a href="../Dashboard.html">Home <i class="fa-solid fa-house"></i> </a>
+      <a href="https://www.linkedin.com/in/priyanshusoyal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank">Linkedln <i class="fa-brands fa-linkedin"></i></a>
+  </nav>
+  <div class="container">
+    <h1>Lottery Game</h1>
+    <div class="ticket" id="ticketDisplay"></div>
+    <button id="generateButton">Generate Ticket</button>
+    <div class="message" id="messageDisplay"></div>
+  </div>
+    
+
+    <script>
+      let generateButton = document.getElementById("generateButton");
+      let ticketDisplay = document.getElementById("ticketDisplay");
+      let messageDisplay = document.getElementById("messageDisplay");
+
+      generateButton.addEventListener("click", () => {
+        const digit1 = Math.floor(Math.random() * 10);
+        const digit2 = Math.floor(Math.random() * 10);
+        const digit3 = Math.floor(Math.random() * 10);
+
+        const ticket = "" + digit1 + digit2 + digit3;
+
+        const sum = digit1 + digit2 + digit3;
+
+        ticketDisplay.textContent = `Your Ticket: ${ticket}`;
+
+        if (sum == 15) {
+          messageDisplay.textContent = `Congratulations! You won the lottery!`;
+        } else {
+          messageDisplay.textContent = `Sorry, Try Again. Sum is ${sum}`;
+        }
+      });
+    </script>
+  </body>
+</html>

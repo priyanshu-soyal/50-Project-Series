@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #212121;
+            color: #fff;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        nav {
+            height: 90px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            border-bottom: 3px solid black;
+            background-color: #f4f1f1;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: 600;
+            color: black;
+            background-color: white;
+            border: 2px solid black;
+            padding: 8px 20px;
+            border-radius: 10px;
+        }
+
+        nav a i {
+            font-size: 25px;
+        }
+
+        .fa-linkedin {
+            /* background-color: gold; */
+            color: rgb(37, 37, 156);
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        h1 {
+            font-weight: 500;
+            font-style: oblique;
+        }
+        #clock {
+            font-size: 40px;
+            background-color: orange;
+            padding: 20px 50px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../Dashboard.html">Home <i class="fa-solid fa-house"></i> </a>
+        <a href="https://www.linkedin.com/in/priyanshusoyal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank">Linkedln <i class="fa-brands fa-linkedin"></i></a>
+    </nav>
+    <div class="center">
+        <h1 id="banner">Your Local Time</h1>
+        <div id="clock"></div>
+    </div>
+</body>
+<script>
+    let clock = document.getElementById('clock');
+    setInterval(() => {
+        let date = new Date();
+        clock.innerHTML = date.toLocaleTimeString();
+    }, 1000)
+</script>
+</html>
