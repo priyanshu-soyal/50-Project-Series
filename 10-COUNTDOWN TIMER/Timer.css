@@ -5,11 +5,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-.main {
+body {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background: url("https://img.freepik.com/free-vector/gradient-connection-background_23-2150462053.jpg?ga=GA1.1.1723486760.1744813692&semt=ais_hybrid&w=740") center center;
     background-size: cover;
+}
+.main {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -58,4 +60,51 @@ input:focus {
 }
 label {
     font-size: 1.5rem;
+}
+@media (max-width: 1150px) {
+    .title {
+        font-size: 4rem;
+    } 
+}
+@media (max-width: 900px) {
+    .title {
+        font-size: 3rem;
+    }
+    .title2 {
+        font-size: 1.7rem;
+    }
+    .cols {
+        width: 500px;
+    }
+    .cols div {
+        width: 100px;
+    }
+    label {
+        font-size: 0.85rem; 
+    }
+    
+}
+@media (max-width: 670px) {
+    .title {
+        font-size: 2rem;
+    } 
+    .title2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 445px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    .title2 {
+        font-size: 1.2rem;
+    }
+    .cols {
+        width: 400px;
+    }
+    .cols div {
+        width: 80px;
+        height: 80px;
+    }
 }
