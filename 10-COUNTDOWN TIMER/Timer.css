@@ -5,6 +5,36 @@
     margin: 0;
     box-sizing: border-box;
 }
+nav {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    border-bottom: 3px solid black;
+    background-color: white;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
+    color: black;
+    border: 2px solid black;
+    padding: 8px 20px;
+    border-radius: 10px;
+  }
+  
+  nav a i {
+    font-size: 25px;
+  }
+  
+  .fa-linkedin {
+    /* background-color: gold; */
+    color: rgb(37, 37, 156);
+  }
 body {
     height: 100vh;
     width: 100vw;
