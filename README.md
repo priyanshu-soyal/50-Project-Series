@@ -1,8 +1,5 @@
 # 50 Projects Series
 
-A collection of 50 JavaScript projects designed to help you master web development skills. Each project focuses on different aspects of JavaScript and web development, from basic concepts to more advanced implementations.
-# 50 Projects Series
-
 A collection of JavaScript projects designed to help you master web development skills. Currently, **13 out of 50 projects** are completed, with more on the way! Each project focuses on different aspects of JavaScript and web development, from basic concepts to more advanced techniques.
 
 ## 🚀 Projects Overview
