@@ -24,7 +24,7 @@ function showMovies(data) {
     movieBox.innerHTML = ""; // Clear previous results
 
     if (data.length === 0) {
-        movieBox.innerHTML = `<div class="no-results">No movies found. Try a different search.</div>`;
+        movieBox.innerHTML = `<div>No movies found. Try a different search.</div>`;
         return;
     }
 

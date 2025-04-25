@@ -1,6 +1,8 @@
 # 50 Projects Series
 
-A collection of 50 JavaScript projects designed to help you master web development skills. Each project focuses on different aspects of JavaScript and web development, from basic concepts to more advanced implementations.
+A collection of JavaScript projects designed to help you master web development skills. Currently, 14 out of 50 projects are completed, with more on the way! Each project focuses on different aspects of JavaScript and web development, from basic concepts to more advanced techniques.
+
+
 
 ## 🚀 Projects Overview
 
@@ -58,12 +60,34 @@ A collection of 50 JavaScript projects designed to help you master web developme
     - Movie information application
     - API integration and data visualization
 
+14. **Weather App** 🌤️
+    - Real-time weather information application
+    - Features:
+      - Current temperature and weather conditions
+      - Feels like temperature
+      - Wind speed and humidity
+      - Min/Max temperature
+      - Location and date display
+      - Responsive design with glassmorphism UI
+      - Error handling and loading states
+    - Technologies:
+      - OpenWeatherMap API integration
+      - Modern CSS with glassmorphism effects
+      - Responsive design
+      - Font Awesome icons
+    - Key learnings:
+      - API integration and error handling
+      - Modern UI/UX design principles
+      - Responsive web development
+      - Asynchronous JavaScript
+
 ## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript (ES6+)
 - Font Awesome Icons
+- OpenWeatherMap API
 
 ## 📁 Project Structure
 

@@ -12,6 +12,34 @@ body {
   background: linear-gradient(135deg, #1a1a1a, #2d3436);
   color: #fff;
 }
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  border-bottom: 3px solid white;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 600;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+
+nav a i {
+  font-size: 25px;
+}
+
+.fa-linkedin {
+  color: #fff;
+}
 
 .container {
   max-width: 95%;
@@ -151,7 +179,26 @@ header h1 {
   color: #ffd700;
 }
 
+.stars {
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  margin-left: 5px;
+}
+
 @media (max-width: 768px) {
+  nav {
+    height: 100px;
+    gap: 50px;
+  }
+  
+  nav a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  nav a i {
+    font-size: 0.9rem;
+  }
   header h1 {
     font-size: 2.2rem;
   }
@@ -168,4 +215,5 @@ header h1 {
   #search {
     padding: 15px 45px 15px 20px;
   }
+
 }
