@@ -1,11 +1,11 @@
 // API Configuration
 const APIURL = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1";
-const IMGPATH = "https://image.tmdb.org/t/p/w1280";
+const IMGPATH = "https://image.tmdb.org/t/p/w500";
 const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
 
 // DOM Elements
 const movieBox = document.querySelector("#movie-box");
-const searchInput = document.querySelector("#search");
+const searchInput = document.querySelector("#searchInput");
 
 // Get movies from API
 async function getMovies(api) {
@@ -37,7 +37,7 @@ function showMovies(data) {
         const stars = '★'.repeat(rating) + '☆'.repeat(5 - rating);
 
         box.innerHTML = `
-            <img src="${IMGPATH + movie.poster_path}" loading="lazy" alt="${movie.title}" onerror="this.src='https://via.placeholder.com/300x450?text=No+Image'"/>
+            <img src="${IMGPATH + movie.poster_path}" loading="lazy"  decoding="async" alt="${movie.title}" onerror="this.src='https://via.placeholder.com/300x450?text=No+Image'"/>
             <div class="overlay">
                 <h2>${movie.title}</h2>
                 <div class="rating">
@@ -55,7 +55,6 @@ function showMovies(data) {
 }
 
 searchInput.addEventListener("keyup", (e) => {
-    console.log(e.target.value)
     if (e.target.value != "") {
         getMovies(SEARCHAPI + e.target.value)
     } 

@@ -2,7 +2,7 @@ const API_KEY = `a1237dd67801994e5bf1a304ae6a8e0f`;
 
 let form = document.querySelector("form");
 let weatherData = document.getElementById("weather-data");
-let searchInput = document.getElementById("search");
+let searchInput = document.getElementById("searchInput");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -103,3 +103,4 @@ function showWeather(data) {
         </div>
     `;
 }
+

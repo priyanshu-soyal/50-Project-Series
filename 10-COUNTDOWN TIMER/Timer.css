@@ -12,34 +12,6 @@ body {
     center center;
   background-size: cover;
 }
-nav {
-  height: 90px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  border-bottom: 3px solid white;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 30px;
-  font-style: italic;
-  font-weight: 600;
-  color: white;
-  border: 2px solid white;
-  padding: 8px 20px;
-  border-radius: 10px;
-}
-
-nav a i {
-  font-size: 25px;
-}
-
-.fa-linkedin {
-  color: #fff;
-}
 
 .main {
   display: flex;
@@ -123,17 +95,6 @@ label {
 }
 
 @media (max-width: 445px) {
-  nav {
-    gap: 60px;
-  }
-
-  nav a {
-    font-size: 1.25rem;
-  }
-
-  nav a i {
-    font-size: 1.25rem;
-  }
   .title {
     font-size: 1.5rem;
   }
@@ -149,17 +110,6 @@ label {
   }
 }
 @media (max-width: 375px) {
-  nav {
-    gap: 60px;
-  }
-
-  nav a {
-    font-size: 1rem;
-  }
-
-  nav a i {
-    font-size: 1rem;
-  }
   .title {
     font-size: 1.2rem;
   }

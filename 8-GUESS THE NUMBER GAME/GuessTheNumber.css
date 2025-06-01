@@ -15,44 +15,11 @@ body {
   align-items: center;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  height: 90px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  border-bottom: 3px solid black;
-  background-color: #f4f1f1;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 30px;
-  font-style: italic;
-  font-weight: 600;
-  color: black;
-  background-color: white;
-  border: 2px solid black;
-  padding: 8px 20px;
-  border-radius: 10px;
-}
-
-nav a i {
-  font-size: 25px;
-}
-
-.fa-linkedin {
-  /* background-color: gold; */
-  color: rgb(37, 37, 156);
-}
-
 h1 {
   text-align: center;
   margin: 20px 0;
 }
+
 .wrapper {
   text-align: center;
   background-color: gray;
@@ -61,10 +28,12 @@ h1 {
   width: 600px;
   border-radius: 10px;
 }
+
 .wrapper p {
   font-size: 25px;
   font-weight: 500;
 }
+
 form {
   margin: 10px 0;
   display: flex;
@@ -73,15 +42,18 @@ form {
   align-items: center;
   gap: 13px;
 }
+
 form label {
   font-size: 50px;
 }
+
 form input {
   padding: 10px 50px;
   outline: none;
   border: none;
   border-radius: 10px;
 }
+
 #submitBtn {
   background-color: black;
   color: white;
@@ -89,9 +61,11 @@ form input {
   font-weight: 500;
   cursor: pointer;
 }
+
 .resultDiv {
   margin: 15px 0;
 }
+
 .button {
   margin-top: 10px;
   padding: 10px 20px;
@@ -102,43 +76,46 @@ form input {
   color: #fff;
   cursor: pointer;
 }
+
 .button h2 {
   font-weight: 400;
 }
 
 @media (max-width: 600px) {
-  nav {
-    gap: 40px;
-  }
-  nav a {
-    font-size: 18px;
-  }
   h1 {
     font-size: 25px;
   }
+
   .wrapper {
     padding: 20px;
     height: 500px;
     width: 300px;
   }
+
   .wrapper p {
     font-size: 14px;
   }
+
   form label {
     font-size: 25px;
   }
+
   form input {
     padding: 10px 40px;
   }
+
   #submitBtn {
     font-size: 18px;
   }
+
   .resultDiv {
     margin: 15px 0;
   }
+
   .button {
     padding: 8px 15px;
   }
+
   .button h2 {
     font-weight: 300;
   }

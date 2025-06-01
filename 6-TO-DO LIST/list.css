@@ -10,36 +10,6 @@ body {
   background: linear-gradient(135deg, #153677, #4e085f);
   padding: 10px;
 }
-nav {
-  height: 90px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  border-bottom: 3px solid black;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 30px;
-  font-style: italic;
-  font-weight: 600;
-  color: black;
-  background-color: white;
-  border: 2px solid black;
-  padding: 8px 20px;
-  border-radius: 10px;
-}
-
-nav a i {
-  font-size: 25px;
-}
-
-.fa-linkedin {
-  /* background-color: gold; */
-  color: rgb(37, 37, 156);
-}
 .todo-app {
   width: 100%;
   max-width: 540px;

@@ -12,37 +12,6 @@ body {
   width: 100vw;
 }
 
-nav {
-  height: 90px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  border-bottom: 3px solid black;
-  background-color: white;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 30px;
-  font-style: italic;
-  font-weight: 600;
-  color: black;
-  border: 2px solid black;
-  padding: 8px 20px;
-  border-radius: 10px;
-}
-
-nav a i {
-  font-size: 25px;
-}
-
-.fa-linkedin {
-  /* background-color: gold; */
-  color: rgb(37, 37, 156);
-}
-
 .container {
   padding: 50px;
   display: flex;
@@ -54,6 +23,7 @@ nav a i {
 h1 {
   font-size: 50px;
 }
+
 .ticket {
   font-size: 2rem;
   margin: 20px auto;
@@ -64,10 +34,12 @@ h1 {
   display: inline-block;
   min-width: 200px;
 }
+
 .message {
   font-size: 1.5rem;
   margin-top: 20px;
 }
+
 button {
   width: fit-content;
   padding: 10px 20px;
@@ -78,6 +50,7 @@ button {
   cursor: pointer;
   border-radius: 4px;
 }
+
 button:hover {
   background-color: #008f63;
 }

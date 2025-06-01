@@ -13,40 +13,6 @@ body {
     overflow-x: none;
 }
 
-nav {
-    height: 90px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-}
-
-nav a {
-    text-decoration: none;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 600;
-    color: white;
-    border: 2px solid white;
-    padding: 8px 20px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-nav a:hover {
-    background: white;
-    color: #3498db;
-}
-
-nav a i {
-    font-size: 25px;
-    margin-left: 5px;
-}
-
 main {
     width: 100%;
     height: calc(100vh - 90px);
@@ -73,7 +39,7 @@ main {
     max-width: 500px;
 }
 
-#search {
+#searchInput {
     width: 100%;
     padding: 15px 45px 15px 25px;
     font-size: 1.2rem;
@@ -94,7 +60,7 @@ main {
     pointer-events: none;
 }
 
-#search:focus {
+#searchInput:focus {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
 }
@@ -206,16 +172,6 @@ main {
 }
 
 @media (max-width: 768px) {
-    nav {
-        height: 70px;
-        gap: 20px;
-    }
-    
-    nav a {
-        font-size: 1.1rem;
-        padding: 5px 12px;
-    }
-    
     .details {
         grid-template-columns: 1fr;
     }

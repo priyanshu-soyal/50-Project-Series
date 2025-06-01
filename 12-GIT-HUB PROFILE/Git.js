@@ -1,7 +1,7 @@
 const APIURL = "https://api.github.com/users/"; 
 
 let main = document.querySelector("#main");
-let userInput = document.getElementById("search");
+let userInput = document.getElementById("userInput");
 let searchBtn = document.getElementById("searchBtn");
 
 

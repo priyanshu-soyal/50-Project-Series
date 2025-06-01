@@ -12,34 +12,6 @@ body {
   background: linear-gradient(135deg, #1a1a1a, #2d3436);
   color: #fff;
 }
-nav {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  border-bottom: 3px solid white;
-}
-
-nav a {
-  text-decoration: none;
-  font-size: 30px;
-  font-style: italic;
-  font-weight: 600;
-  color: white;
-  border: 2px solid white;
-  padding: 8px 20px;
-  border-radius: 10px;
-}
-
-nav a i {
-  font-size: 25px;
-}
-
-.fa-linkedin {
-  color: #fff;
-}
 
 .container {
   max-width: 95%;
@@ -70,7 +42,7 @@ header h1 {
   margin: 0 auto;
 }
 
-#search {
+#searchInput {
   width: 100%;
   padding: 18px 50px 18px 25px;
   font-size: 1.1rem;
@@ -82,11 +54,11 @@ header h1 {
   backdrop-filter: blur(10px);
 }
 
-#search::placeholder {
+#searchInput::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 
-#search:focus {
+#searchInput:focus {
   background: rgba(255, 255, 255, 0.15);
   border-color: #ff6b6b;
   box-shadow: 0 0 15px rgba(255, 107, 107, 0.3);
@@ -103,7 +75,7 @@ header h1 {
   transition: color 0.3s ease;
 }
 
-#search:focus + .search-icon {
+#search:focus+.search-icon {
   color: #ff6b6b;
 }
 
@@ -161,12 +133,15 @@ header h1 {
   color: #fff;
   font-weight: 600;
 }
+
 .release-date {
   margin: 5px 0;
 }
+
 .overview {
   line-height: 1.1rem;
 }
+
 .overlay .rating {
   color: #ffd700;
   font-size: 1.2rem;
@@ -190,15 +165,16 @@ header h1 {
     height: 100px;
     gap: 50px;
   }
-  
+
   nav a {
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
-  
+
   nav a i {
     font-size: 0.9rem;
   }
+
   header h1 {
     font-size: 2.2rem;
   }

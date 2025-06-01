@@ -5,39 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background: #001e4d;
 }
-nav {
-  height: 90px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  background-color: #2a5aa7;
-  border-bottom: 3px solid black;
-}
 
-nav a {
-  text-decoration: none;
-  font-size: 30px;
-  font-style: italic;
-  font-weight: 600;
-  color: black;
-  background-color: white;
-  border: 2px solid black;
-  padding: 8px 20px;
-  border-radius: 10px;
-}
-
-nav a i {
-  font-size: 25px;
-}
-.fa-linkedin {
-  /* background-color: gold; */
-  color: rgb(37, 37, 156);
-}
 .app {
   background-color: #fff;
   width: 90%;
@@ -46,6 +18,7 @@ nav a i {
   padding: 30px;
   border-radius: 10px;
 }
+
 .app h1 {
   text-align: center;
   font-size: 40px;
@@ -56,15 +29,18 @@ nav a i {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
+
 .quiz {
   position: relative;
   padding: 20px 0;
 }
+
 .quiz h2 {
   color: #001e4d;
   font-size: 18px;
   font-weight: 600;
 }
+
 .btn {
   width: 100%;
   background-color: #fff;
@@ -78,13 +54,16 @@ nav a i {
   cursor: pointer;
   transition: all 0.3s;
 }
+
 .btn:hover:not([disabled]) {
   background-color: #222;
   color: #fff;
 }
+
 .btn:disabled {
   cursor: no-drop;
 }
+
 #next-btn,
 #pre-btn,
 #playAgain-btn {
@@ -98,19 +77,23 @@ nav a i {
   width: 150px;
   display: none;
 }
+
 #next-btn {
   position: absolute;
   bottom: -20px;
   margin-left: 22pc;
 }
+
 #pre-btn {
   margin-left: 2pc;
   position: absolute;
   bottom: -20px;
 }
+
 .correct {
   background: #9aeabc;
 }
+
 .incorrect {
   background: #ff9393;
 }
