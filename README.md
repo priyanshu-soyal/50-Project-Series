@@ -157,6 +157,15 @@ A collection of JavaScript projects designed to help you master web development 
       - Responsive web development
       - Asynchronous JavaScript
 
+15. **QR Code Generator** 📄
+    - Generate QR codes for any text or URL
+    - Features:
+      - Real-time QR code generation
+      - Supports text and URLs
+      - Responsive and simple UI
+    - Technologies: HTML, CSS, JavaScript, QR code API/library
+    - Key learnings: Working with third-party libraries/APIs, canvas/image generation, user input handling
+
 ## 🛠️ Technologies Used
 
 - HTML5
