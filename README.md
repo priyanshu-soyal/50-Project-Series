@@ -195,7 +195,7 @@ Each project is organized in its own directory with the following naming convent
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/priyanshu-soyal/100-Project-Series.git
+git clone https://github.com/priyanshu-soyal/50-Project-Series.git
 ```
 
 2. Navigate to the project directory you want to explore:
