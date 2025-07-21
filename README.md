@@ -189,7 +189,7 @@ Each project is organized in its own directory with the following naming convent
 ## 🔗 Quick Links
 
 - [LinkedIn Profile](https://www.linkedin.com/in/priyanshusoyal)
-- [GitHub Repository](https://github.com/priyanshu-soyal/100-Project-Series)
+- [GitHub Repository](https://github.com/priyanshu-soyal/50-Project-Series/)
 
 ## 🚀 Getting Started
 
