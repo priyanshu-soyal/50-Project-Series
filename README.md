@@ -1,6 +1,6 @@
 # 50 Projects Series
 
-A collection of JavaScript projects designed to help you master web development skills. Currently, 14 out of 50 projects are completed, with more on the way! Each project focuses on different aspects of JavaScript and web development, from basic concepts to more advanced techniques.
+A collection of JavaScript projects designed to help you master web development skills. Currently, 16 out of 50 projects are completed, with more on the way! Each project focuses on different aspects of JavaScript and web development, from basic concepts to more advanced techniques.
 
 ## 🚀 Projects Overview
 
@@ -140,22 +140,12 @@ A collection of JavaScript projects designed to help you master web development 
     - Real-time weather information application
     - Features:
       - Current temperature and weather conditions
-      - Feels like temperature
-      - Wind speed and humidity
-      - Min/Max temperature
+      - Min/Max temperature, wind speed, humidity
       - Location and date display
-      - Responsive design with glassmorphism UI
+      - Responsive design with modern UI
       - Error handling and loading states
-    - Technologies:
-      - OpenWeatherMap API integration
-      - Modern CSS with glassmorphism effects
-      - Responsive design
-      - Font Awesome icons
-    - Key learnings:
-      - API integration and error handling
-      - Modern UI/UX design principles
-      - Responsive web development
-      - Asynchronous JavaScript
+    - Technologies: HTML, CSS, JavaScript, OpenWeatherMap API, Font Awesome
+    - Key learnings: API integration, error handling, responsive design, asynchronous JavaScript
 
 15. **QR Code Generator** 📄
     - Generate QR codes for any text or URL
@@ -165,6 +155,17 @@ A collection of JavaScript projects designed to help you master web development 
       - Responsive and simple UI
     - Technologies: HTML, CSS, JavaScript, QR code API/library
     - Key learnings: Working with third-party libraries/APIs, canvas/image generation, user input handling
+
+16. **Personal Portfolio Website** 🖥️
+    - Responsive portfolio website to showcase projects, skills, and experience
+    - Features:
+      - Modern, animated UI with smooth transitions
+      - About, Skills, Experience, and Education sections
+      - Project showcase with images, tech stack, and links
+      - Contact form and social media integration
+      - Fully responsive and mobile-friendly design
+    - Technologies: HTML, CSS (modern gradients, glassmorphism, animations), JavaScript (tab navigation, menu toggling)
+    - Key learnings: Responsive web design, personal branding, advanced CSS, interactive UI/UX, modular code structure
 
 ## 🛠️ Technologies Used
 

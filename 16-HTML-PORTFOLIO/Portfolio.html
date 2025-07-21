@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu-Soyal-Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="https://static.vecteezy.com/system/resources/previews/027/990/181/large_2x/letter-p-metal-style-free-png.png" class="logo-png" loading="lazy" alt=""> -->
+
+                <div class="logo">
+                    <span class="logo-text">PS</span>
+                </div>
+                 
+                <ul id="sideMenu">
+                    <li><a href="/16-HTML-PORTFOLIO/Portfolio.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p style="color: #ababab;">MERN STACK DEVELOPER</p>
+                <h1>Hi, I'm <span>Priyanshu</span> Soyal <br> from Jaipur</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://imgs.search.brave.com/pIMkqqw2EjzF0O6syO8zDLwoDOIz0Rr_gzj_v9rcaH0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvNzcx/NzQyL3BleGVscy1w/aG90by03NzE3NDIu/anBlZz9hdXRvPWNv/bXByZXNzJmNzPXRp/bnlzcmdiJmRwcj0x/Jnc9NTAw" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and detail-oriented Full Stack Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js). With a strong foundation in both front-end and back-end technologies, I build responsive, efficient, and scalable web applications. My focus is on writing clean, maintainable code and continuously learning new tools and frameworks to enhance user experience and performance.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-tab-links" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span class="span1">MERN STACK DEVELOPER</span> 
+                                <br>
+                                &bull; Frontend : HTML5, CSS3, JavaScript (ES6+), React.js, Router, Redux,  Tailwind CSS, Bootstrap. <br>
+                                &bull;  Backend : Node.js, Express.js, RESTful APIs. <br>
+                                &bull; Database : SQL, MongoDB, Mongoose. <br>
+                                &bull; Tools & Platforms : Git, GitHub, VS Code, cursor. <br>
+                                &bull; Other Skills : Responsive Design, Debugging.
+                            </li>
+                            <li><span class="span1">SOFTWARE DEVELOPER</span>
+                                 <br>
+                                 &bull; Programming Languages : Java (Basic). <br>
+                                 &bull; Concepts : Object-Oriented Programming (OOP), Data Structures & Algorithms.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span class="span1">Web Development Internship</span> 
+                                <br> 
+                                <span class="span2">TechnoHacks Edutech || June 2024 – July 2024</span> 
+                                <br> 
+                                &bull; Developed responsive web applications using HTML, CSS, and JavaScript<br>
+                                &bull; Collaborated with team members on various frontend projects<br>
+                                &bull; Gained hands-on experience with modern web development practices
+                            </li>
+                            <li><span class="span1">MERN Stack Development Internship</span> 
+                                <br> 
+                                <span class="span2">Codec Technologies || June 2025 – September 2025</span> 
+                                <br> 
+                                &bull; Built full-stack applications using MongoDB, Express.js, React.js, and Node.js<br>
+                                &bull; Implemented RESTful APIs and database management systems<br>
+                                • Worked on real-world projects with industry-standard development workflows
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span class="span1">Bachelor of Technology in Computer Science (B.Tech)</span> 
+                                <br> 
+                                <span class="span2">Jagannath University, Jaipur</span> <br>
+                                2022 - 2026 (Expected) <br>
+                                CGPA: 7/10
+                            </li>
+                            <li><span class="span1">Higher Secondary Education (12th)</span> 
+                                <br> 
+                                <span class="span2">SVGMS</span> <br>
+                                2021 - 2022 <br>
+                                Percentage : 60%
+                            </li>
+                            <li><span class="span1">Secondary Education (10th)</span> 
+                                <br> 
+                                <span class="span2">SVGMS</span> <br>
+                                2019 - 2020 <br>
+                                Percentage : 62%
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/oYOtPdmlbGZMLsIlmIGX5D11ROedQ5X24BM7YrYiHRY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG5p/Lmljb25zY291dC5j/b20vaWxsdXN0cmF0/aW9uL3ByZW1pdW0v/dGh1bWIvZ2lybC1z/aG93aW5nLWZ1dHVy/ZS1vZi1mb3JlY2Fz/dGluZy1pbGx1c3Ry/YXRpb24tZG93bmxv/YWQtaW4tc3ZnLXBu/Zy1naWYtZmlsZS1m/b3JtYXRzLS1yYWlu/eS13ZWF0aGVyLWNs/b3VkeS1yYWluZmFs/bC1mb3JlY2FzdGVy/LXBhY2stbmF0dXJl/LWlsbHVzdHJhdGlv/bnMtMTAxMzYyMzEu/cG5n" alt="WEATHER APP">
+                    <div class="work-info">
+                        <h3>WEATHER APP</h3>
+                        <p>A weather application with location-based forecasts, and historical weather data visualization</p>
+                        <div class="tech-used">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Weather API</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="https://github.com/priyanshu-soyal/50-Project-Series/tree/main/14-WEATHER%20APP" target="_blank">View Code</a>
+                            <a href="https://codepen.io/Priyanshu-Soyal/full/qEObeVm" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/k5g0RCYX9-zvH8hvhxLpXJen8PtQ_Ou3R_F0ajDY5o8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTIuZGV2LnRvL2R5/bmFtaWMvaW1hZ2Uv/d2lkdGg9ODAwLGhl/aWdodD0sZml0PXNj/YWxlLWRvd24sZ3Jh/dml0eT1hdXRvLGZv/cm1hdD1hdXRvL2h0/dHBzOi8vZGV2LXRv/LXVwbG9hZHMuczMu/YW1hem9uYXdzLmNv/bS91cGxvYWRzL2Fy/dGljbGVzLzdzd21i/bmJub3F5bXB2cHRn/ZjByLnBuZw" alt="Git-Hub Profile App">
+                    <div class="work-info">
+                        <h3>Git-Hub Profile App</h3>
+                        <p>A Git-Hub Profile App.</p>
+                        <div class="tech-used">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="https://github.com/priyanshu-soyal/50-Project-Series/tree/main/12-GIT-HUB%20PROFILE" target="_blank">View Code</a>
+                            <a href="https://codepen.io/Priyanshu-Soyal/full/ZYbQgvG" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/FEjS37YcTLPWQQeiVNCHlESd9g-LyG586fSmq_BKQic/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/am90Zm9ybS5jb20v/dXBsb2Fkcy9ncm93/dGhUZWFtLzI0MzM3/MTUyODYxMjk2MC82/MTA0MDgwODg4NTA3/MDU1NDE1L2hvdzIu/cG5n" alt="QR Code Generator">
+                    <div class="work-info">
+                        <h3>QR Code Generator</h3>
+                        <p>A QR Code Generator.</p>
+                        <div class="tech-used">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>QR Genenrator API</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="https://github.com/priyanshu-soyal/50-Project-Series/tree/main/15-QR-CODE-GENERATOR" target="_blank">View Code</a>
+                            <a href="https://codepen.io/Priyanshu-Soyal/full/XJmXvZK" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/HEKo3LVnWfcdymLgdFqbcTe6jO_RvoCxh_ct3SBRWOc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG5p/Lmljb25zY291dC5j/b20vaWxsdXN0cmF0/aW9uL3ByZW1pdW0v/dGh1bWIvdG9kby1s/aXN0LWlsbHVzdHJh/dGlvbi1kb3dubG9h/ZC1pbi1zdmctcG5n/LWdpZi1maWxlLWZv/cm1hdHMtLWNvbXBs/ZXRlZC10YXNrLWNv/bXBsZXRlLXRhc2tz/LWNvbXBsZXRpb24t/dGFza2xpc3QtYnVz/aW5lc3MtbWFuYWdl/bWVudC1wYWNrLXBl/b3BsZS1pbGx1c3Ry/YXRpb25zLTQ2MDk0/NzYucG5nP2Y9d2Vi/cA" alt="To Do App">
+                    <div class="work-info">
+                        <h3>TO DO App</h3>
+                        <p>A TO DO App.</p>
+                        <div class="tech-used">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>LocalStorage</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="https://github.com/priyanshu-soyal/50-Project-Series/tree/main/6-TO-DO%20LIST" target="_blank">View Code</a>
+                            <a href="https://codepen.io/Priyanshu-Soyal/full/wBKMVyN" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/pK10_sxvZuTfrlKu05wnuNHoicKYklgqlgm0tuzURtg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG5p/Lmljb25zY291dC5j/b20vaWxsdXN0cmF0/aW9uL3ByZW1pdW0v/dGh1bWIvcGVyc29u/YWwtcG9ydGZvbGlv/LWlsbHVzdHJhdGlv/bi1kb3dubG9hZC1p/bi1zdmctcG5nLWdp/Zi1maWxlLWZvcm1h/dHMtLXJlc3VtZS1l/bXBsb3llZS1jdi1i/dXNpbmVzcy1wYWNr/LXBlb3BsZS1pbGx1/c3RyYXRpb25zLTkw/NzM3MTYucG5nP2Y9/d2VicA" alt="Portfolio Website">
+                    <div class="work-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>A responsive portfolio website showcasing my projects, skills, and experience with smooth animations and modern design.</p>
+                        <div class="tech-used">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="https://github.com/priyanshusoyal/portfolio" target="_blank">View Code</a>
+                            <a href="https://codepen.io/Priyanshu-Soyal/full/ZYbQgob" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/X-aesFDVyvi4D-1uBn0e9uz-PWNLYMOR2hb-AnevbDM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvY2FsY3VsYXRv/ci9zbWFsbC9jYWxj/dWxhdG9yX1BORzEw/MjI0NC5wbmc" alt="Calculator App">
+                    <div class="work-info">
+                        <h3>Calculator</h3>
+                        <p>A Calculator App.</p>
+                        <div class="tech-used">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="work-links">
+                            <a href="https://github.com/priyanshusoyal/calculator" target="_blank">View Code</a>
+                            <a href="https://codepen.io/Priyanshu-Soyal/full/vENLojR" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/priyanshu-soyal/50-Project-Series" target="_blank" class="btn">View All Projects</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <div class="row">
+                    <div class="contact-info">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> priyanshusoyal97@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> +91 9856231470</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan, India</p>
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/in/priyanshusoyal" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/priyanshu-soyal" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <!-- <a href="#" download class="btn btn2">Download CV</a> -->
+                    </div>
+                    <div class="contact-form">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="copyright">
+        <p>Copyright &copy; Priyanshu. <i class="fa-solid fa-heart"></i></p>
+    </footer>
+    
+</body>
+<script src="Portfolio.js"></script>
+</html>
