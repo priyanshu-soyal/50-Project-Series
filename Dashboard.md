@@ -1,6 +1,6 @@
 # 50 Projects Series
 
-A collection of JavaScript and React projects designed to help you master web development skills. Currently, 17 out of 50 projects are completed, with more on the way! Each project focuses on different aspects of web development, from basic JavaScript concepts to advanced React applications.
+A collection of JavaScript and React projects designed to help you master web development skills. Currently, 18 out of 50 projects are completed, with more on the way! Each project focuses on different aspects of web development, from basic JavaScript concepts to advanced React applications.
 
 ## 🚀 Projects Overview
 
@@ -179,6 +179,17 @@ A collection of JavaScript and React projects designed to help you master web de
       - Real-time navigation with React Router
     - Technologies: React 19, React Router v7, CSS Grid/Flexbox, Vite, ES6+
     - Key learnings: React fundamentals, component architecture, routing, state management, modern CSS, responsive design
+
+18. **Mini Chat System** 💬
+    - Modern, responsive chat application built with Node.js, Express, MongoDB, and EJS
+    - Features:
+      - Create, read, update, and delete chat messages
+      - Responsive design for all devices
+      - Modern UI with gradient backgrounds and smooth animations
+      - Real-time message sorting by creation time
+      - Form validation and error handling
+    - Technologies: Node.js, Express.js, MongoDB, Mongoose, EJS, CSS3
+    - Key learnings: RESTful API design, CRUD operations, server-side rendering, database integration, modern CSS, error handling
 
 ## 🛠️ Technologies Used
 
