@@ -4,20 +4,20 @@
 const express = require("express");
 const app = express();
 
+//--> Method Override
 const methodOverride = require("method-override")
+app.use(methodOverride("_method"))
 
 //idea: path :-
 const path = require("path");
 
-// --> use public folder
-app.use(express.static("public"));
-
-//--> methodOverride :-
-app.use(methodOverride("_method"))
-
 //--> set views folder
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+
+// --> use public folder
+app.use(express.static("public"));
+
 
 //--> parse the res.body data of post request
 app.use(express.urlencoded({ extended: true }));
@@ -27,15 +27,10 @@ const mongoose = require("mongoose");
 const Chat = require("./models/chat");
 
 async function main() {
-  try {
     await mongoose.connect("mongodb://127.0.0.1:27017/whatsapp");
-    console.log("Connection Successful");
-  } catch (err) {
-    console.log("MongoDB Connection Error:", err);
-  }
 }
 
-main();
+main().then(() => console.log("Connection Successful")).catch((err) => console.log(err))
 
 //--> Chats route as root
 app.get("/", async (req, res) => {

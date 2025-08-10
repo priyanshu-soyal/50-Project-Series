@@ -29,12 +29,7 @@ const chatSchema = new mongoose.Schema({
         required: true,
         default: Date.now
     }
-}, {
-    timestamps: true
 });
-
-// Add index for better query performance
-chatSchema.index({ created_At: -1 });
 
 const Chat = mongoose.model("Chat", chatSchema);
 

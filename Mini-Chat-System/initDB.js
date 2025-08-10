@@ -26,7 +26,7 @@ main()
 // .then(res => console.log(res))
 // .catch(err => console.log(err))
 
-//idea: insert multiple data :-
+//idea: insert multiple data as raw data :-
 let chats = [
   {
     from: "neha",

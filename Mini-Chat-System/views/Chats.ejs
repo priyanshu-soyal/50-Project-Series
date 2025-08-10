@@ -13,12 +13,12 @@
         
         <% for( let chat of chats) { %>
             <div class="chat">
-                <p><span class="status online"></span>From : <i> <%= chat.from %> </i></p>
+                <p><span class="status online"></span>Sender : <i> <%= chat.from %> </i></p>
                 <div class="msg">
                     <p>Message : <%= chat.msg %></p>
                     <a href="/EditChats/<%= chat._id %>/edit">Edit</a>
                 </div>
-                <p>Receive By : <i> <%= chat.to %></i></p>
+                <p>Receiver : <i> <%= chat.to %></i></p>
                 <hr>
                 <p>Time : <i> <%= chat.created_At.toString().split(" ")[4]%></i></p>
                 <p>Date : <i> <%= chat.created_At.toString().split(" ").splice(0, 4).join("-") %></i></p>
