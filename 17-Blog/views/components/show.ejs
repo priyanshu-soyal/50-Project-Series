@@ -1,0 +1,37 @@
+<% layout("/layouts/boilerplateCode.ejs") -%>
+
+<body>
+  <a href="/" class="back-arrow"><i class="fa-solid fa-arrow-left"></i></a>
+  <section class="showPost-container">
+    <div class="showPost-image-container">
+      <img
+        src="<%= post.imageUrl %>"
+        alt="<%= post.title %>"
+        class="showPost-featured-image"
+      />
+    </div>
+
+    <article class="showPost-content-area">
+      <h1 class="showPost-title"><%= post.title %></h1>
+
+      <div class="showPost-meta">
+        <span class="showPost-meta-item"
+          >By: <strong> <%= post.author %> </strong>
+        </span>
+        <span class="showPost-meta-item">|</span>
+        <span class="showPost-meta-item"
+          >Published on: <%= new Date(post.date).toLocaleDateString('en-US', {
+          year: 'numeric' , month: 'long' , day: 'numeric' }) %></span
+        >
+      </div>
+
+      <hr />
+
+      <div class="showPost-body">
+        <p><%- post.content %></p>
+      </div>
+
+      
+    </article>
+  </section>
+</body>
