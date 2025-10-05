@@ -1,67 +1,94 @@
-const sampleListing = [
+const samplePost = [
   {
-    title:
-      "The Rise of Serverless: Why Developers Are Leaving Traditional Hosting",
-    author: "Aarav Sharma",
-    content:
-      "Serverless computing, jaise AWS Lambda, Google Cloud Functions, aur Azure Functions, backend logic ko 'as-a-service' chalaata hai. Isse humein servers manage karne ki zaroorat nahi padti, billing sirf execution time par hoti hai, aur scalability built-in milti hai. Yeh cost-efficiency aur deployment speed ke liye game-changer hai, khas kar microservices ke liye. Hum is post mein performance, vendor lock-in, aur cold-start issues par bhi charcha karenge.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    date: new Date("2025-10-02T10:30:00Z"),
-    tags: ["Cloud", "Serverless", "AWS", "Deployment"],
+    title: "Mastering JavaScript in 2025: Tips for Modern Developers",
+    author: "Rohit Sharma",
+    description:
+      "JavaScript continues to evolve with new features every year. Learn how to use ES2025 updates, async patterns, and performance optimization tricks to stay ahead in web development.",
+    image:
+      "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1170&auto=format&fit=crop",
+    createdAt: "2025-05-08T00:00:00.000Z",
   },
   {
-    title: "Mastering Asynchronous JavaScript: Promises, Async/Await Explained",
-    slug: "mastering-async-javascript",
-    author: "Deepika Singh",
-    excerpt:
-      "JavaScript mein data fetching aur non-blocking operations ko samajhna bahut zaroori hai. Yahan Promises aur Async/Await ka deep dive, real-world examples ke saath.",
-    content:
-      "Traditional JavaScript mein, blocking code se performance ruk jaati thi. Promises ne callback hell ko theek kiya, jisse code zyaada padhne-yogya (readable) bana. Phir aaye Async/Await, jo asynchronous code ko synchronous code ki tarah likhne ki suvidha dete hain. Hum `try...catch` blocks ka use karke error handling ko aasan bana sakte hain aur apne Express routes ko non-blocking rakh sakte hain, khaas kar MongoDB queries ke dauraan.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1649451844931-57e22fc82de3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QXN5bmNocm9ub3VzJTIwSmF2YVNjcmlwdCUzQXxlbnwwfHwwfHx8MA%3D%3D",
-    date: new Date("2025-09-29T15:45:00Z"),
-    tags: ["JavaScript", "Async", "Promises", "WebDev"],
+    title: "The Future of Web Design: Minimalism and Microinteractions",
+    author: "Ananya Patel",
+    description:
+      "Discover how minimal design principles and microinteractions enhance user engagement and improve overall UX in 2025’s digital landscape.",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1170&auto=format&fit=crop",
+    createdAt: "2025-04-18T00:00:00.000Z",
   },
   {
-    title: "Designing for Mobile-First: The Future of Web Layouts",
-    slug: "mobile-first-web-design",
-    author: "Kabir Khan",
-    excerpt:
-      "Aaj ke daur mein zyadatar traffic mobile se aata hai. Jaaniye ki kyun 'Mobile-First' approach sirf trend nahi, balki ek zaroorat hai, aur isse kaise implement karein.",
-    content:
-      "Mobile-First design ka matlab hai ki hum pehle sabse choti screen ke liye styling karte hain aur phir CSS Media Queries ka use karke badi screens ke liye styles add karte hain. Isse performance, loading speed, aur user experience mein sudhar hota hai. Hum dekhenge ki kaise Flexbox aur Grid (jaisa ki humne aapke blog grid mein kiya) ka use karke complex layouts ko responsive bana sakte hain.",
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1720287601300-cf423c3d6760?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    date: new Date("2025-09-25T09:00:00Z"),
-    tags: ["Design", "CSS", "Responsive", "Mobile"],
+    title: "Building Scalable APIs with Node.js and Express",
+    author: "Karan Mehta",
+    description:
+      "Learn how to design RESTful APIs that scale effortlessly using Node.js, Express, and MongoDB with practical examples and best practices.",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1170&auto=format&fit=crop",
+    createdAt: "2025-05-08T00:00:00.000Z",
   },
   {
-    title: "Optimizing MongoDB Queries for High Traffic Blogs",
-    slug: "optimizing-mongodb-queries",
-    author: "Aarav Sharma",
-    excerpt:
-      "Jab aapka blog badhta hai, toh MongoDB queries slow ho sakte hain. Indexes, Projections, aur Aggregation Pipelines ki madad se performance ko kaise boost karein.",
-    content:
-      "MongoDB mein, Indexes bilkul kitaab ki tarah kaam karte hain - yeh data retrieval ko tez karte hain. Khaas kar `slug` field par index banana zaroori hai. Hum Projection ka use karke sirf woh fields fetch karenge jo zaroori hain (jaise ki `excerpt` page par sirf title, slug, aur excerpt). Aggregation Pipelines complex reporting ya data transformation ke liye bahut powerful hote hain.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1637569500745-703ca1c96733?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8T3B0aW1pemluZyUyME1vbmdvREIlMjBRdWVyaWVzJTIwZm9yJTIwSGlnaCUyMFRyYWZmaWMlMjBCbG9nc3xlbnwwfHwwfHx8MA%3D%3D",
-    date: new Date("2025-09-18T12:00:00Z"),
-    tags: ["MongoDB", "Performance", "Database", "Backend"],
+    title: "AI-Powered Websites: How Machine Learning is Changing Web Dev",
+    author: "Priya Nair",
+    description:
+      "Artificial Intelligence is revolutionizing web development. From chatbots to personalized UX, explore how developers can integrate ML models into modern web apps.",
+    image:
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1170&auto=format&fit=crop",
+    createdAt: "2025-05-10T00:00:00.000Z",
   },
   {
-    title: "Boosting Developer Productivity with VS Code Extensions",
-    slug: "vscode-productivity-extensions",
-    author: "Priya Singh",
-    excerpt:
-      "Apne development workflow ko supercharge karne ke liye 5 zaroori VS Code extensions. Code snippets se lekar Live Share tak, sab kuch yahan hai.",
-    content:
-      "VS Code ka ecosystem bahut bada hai. Extensions jaise 'Prettier' aur 'ESLint' code formatting aur quality maintain karte hain. 'DotENV' se environment variables manage karna aasan ho jaata hai. 'Thunder Client' ya 'REST Client' se hum VS Code ke andar hi API testing kar sakte hain, jo Express development ke liye bahut helpful hai.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    date: new Date("2025-09-10T16:00:00Z"),
-    tags: ["Productivity", "Tools", "VSCode", "DevOps"],
+    title: "Tailwind CSS vs Bootstrap: Which One to Choose in 2025?",
+    author: "Arjun Singh",
+    description:
+      "Both Tailwind CSS and Bootstrap are powerful tools for styling websites. Let’s compare performance, flexibility, and design workflow to find the better choice for your project.",
+    image:
+      "https://res-1.cloudinary.com/hotwhbffo/image/upload/q_auto/v1/ghost-blog-images/tailwindcss-vs-bootstrap.png", 
+    createdAt: "2025-05-12T00:00:00.000Z",
+  },
+  {
+    title: "Top 10 VS Code Extensions for Web Developers",
+    author: "Neha Gupta",
+    description:
+      "Speed up your workflow and improve code quality with these must-have Visual Studio Code extensions every developer should use in 2025.",
+    image:
+      "https://images.unsplash.com/photo-1618588507085-c79565432917?q=80&w=1170&auto=format&fit=crop", // 
+    createdAt: "2025-05-15T00:00:00.000Z",
+  },
+  {
+    title: "How to Build a Blog App with EJS and Express",
+    author: "Amit Verma",
+    description:
+      "A complete step-by-step guide to building a dynamic blog application using EJS templates, Express.js, and MongoDB.",
+    image:
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1170&auto=format&fit=crop",
+    createdAt: "2025-05-18T00:00:00.000Z",
+  },
+  {
+    title: "Understanding Web Accessibility (a11y) in Modern Websites",
+    author: "Simran Kaur",
+    description:
+      "Make your websites inclusive! Learn how to implement accessibility standards (WCAG 2.2) for better usability and SEO ranking.",
+    image:
+      "https://www.searchenginejournal.com/wp-content/uploads/2020/08/9-ways-you-can-make-your-website-more-accessible-5f3f5d3bd7a34.png",
+    createdAt: "2025-05-20T00:00:00.000Z",
+  },
+  {
+    title: "Deploying Web Apps with Docker and AWS in 2025",
+    author: "Manish Yadav",
+    description:
+      "A practical guide on containerizing your web applications using Docker and deploying them seamlessly on AWS infrastructure.",
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1170&auto=format&fit=crop",
+    createdAt: "2025-05-22T00:00:00.000Z",
+  },
+  {
+    title: "The Rise of TypeScript: Why Every Developer Should Learn It",
+    author: "Riya Malhotra",
+    description:
+      "TypeScript brings strong typing and better tooling to JavaScript projects. Find out why more developers are adopting it for scalable and bug-free development.",
+    image:
+      "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=1170&auto=format&fit=crop",
+    createdAt: "2025-05-25T00:00:00.000Z",
   },
 ];
 
-module.exports = {data: sampleListing};
+module.exports = { data: samplePost };

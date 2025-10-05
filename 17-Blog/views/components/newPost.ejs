@@ -1,30 +1,26 @@
-<% layout("/layouts/boilerplateCode.ejs") -%>
+<% layout("/layout/boilerplateCode.ejs") -%>
+<Section class="newPost">
+    <form action="/blogify/posts" method="POST" class="newPost-form">
+      <div class="form-group">
+        <label for="title">Post Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter post title" required />
+      </div>
 
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="6" placeholder="Write your post description..." required></textarea>
+      </div>
 
+      <div class="form-group">
+        <label for="author">Author Name</label>
+        <input type="text" id="author" name="author" placeholder="Enter author name" required />
+      </div>
 
-<section class="newPost-section">
-    <form class="newPost-form" action="/" method="post"> 
-        
-        <div class="form-group">
-            <label for="title" class="form-label">Title</label>
-            <input type="text" placeholder="Enter Title" name="title" id="title" class="form-control" required>
-        </div>
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        <input type="url" id="image" name="image" placeholder="Paste image URL or leave blank" />
+      </div>
 
-        <div class="form-group">
-            <label for="author" class="form-label">Author</label>
-            <input type="text" placeholder="Enter Publisher name" name="author" id="author" class="form-control" required>
-        </div>
-
-        <div class="form-group">
-            <label for="content" class="form-label">Description</label>
-            <textarea name="content" id="content" rows="10" cols="10" placeholder="Enter Description for the post" class="form-control text-area" required></textarea>
-        </div>
-
-        <div class="form-group">
-            <label for="imageUrl" class="form-label">Image Url</label>
-            <input type="text" placeholder="Enter Image Url" id="imageUrl" name="imageUrl" class="form-control">
-        </div>
-        
-        <button type="submit" class="btn-submit">Publish Post</button>
+      <button type="submit" class="second-btn">Publish Post</button>
     </form>
-</section>
+</Section>

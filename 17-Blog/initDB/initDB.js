@@ -1,21 +1,20 @@
 const mongoose = require("mongoose");
-const postData = require("./data");
-const Post = require("../models/posts");
-
+const sampleData = require("./data");
+const Post = require("../models/Posts")
+const mongoURL = "mongodb://127.0.0.1:27017/BlogDB";
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/blog");
+    await mongoose.connect(mongoURL);    
 }
-main()
-  .then(() => {
-    console.log("MongoDB Connect");
-  })
-  .catch((err) => {
+main().then(() => {
+    console.log("Connected to DB");
+}).catch((err) => {
     console.log(err);
-  });
+})
 
-const initDB = async() => {
+const init = async () => {
     await Post.deleteMany({});
-    await Post.insertMany(postData.data)
-    console.log("Data was initialized")
+    await Post.insertMany(sampleData.data);
+    console.log("Data was Initialized");
 }
-initDB();
+
+init();
