@@ -371,6 +371,7 @@ nav .fa-solid {
 
 .contact-info {
     flex-basis: 35%;
+    margin: 0 auto;
 }
 
 .contact-info p {
